@@ -1,34 +1,22 @@
+import React, { useState } from 'react';
 import './App.css';
-import CoverImage from './components/CoverImage/CoverImage';
-import InvitationText from './components/InvitationText/InvitationText';
-import WeddingDatePicker from './components/WeddingDatePicker/WeddingDatePicker';
-import CountdownTimer from './components/CountdownTimer/CountdownTimer';
-import KakaoMap from './components/KakaoMap/KakaoMap';
-import Gallery from './components/Gallery/Gallery';
-import MobileInvitation from './components/MobileInvitation/MobileInvitation';
-import Guestbook from './components/Guestbook/Guestbook';
-import MusicPlayer from './components/MusicPlayer/MusicPlayer';
-import BottomImage from './components/BottomImage/BottomImage';
-import AttendanceStatus from './components/AttendanceStatus/AttendanceStatus';
-
-
- 
+import Header from './components/01-Header/CoverImage'; // CoverImage 컴포넌트 불러오기
+import MainContent from './components/02-MainContent/MainContent';  // MainContent 폴더 안의 섹션들
+import Footer from './components/03-Footer/BottomImage';  // Footer 컴포넌트 불러오기
+import Modal from './components/04-Modal/AttendanceStatus'; // Modal 관련 컴포넌트 불러오기
+import MusicPlay from './components/05-MusicPlay/MusicPlayer'; // MusicPlayer 컴포넌트 불러오기
+import GifIntro from './components/06-GifIntro/GifIntro'; // GifIntro 컴포넌트 불러오기
 
 
 function App() {
   return (
     <div className="App">
-      <AttendanceStatus />
-      <MusicPlayer />
-      <CoverImage />
       <div className="content">
-        <InvitationText /> {/* 인사말 추가 */}
-        <WeddingDatePicker /> {/* 캘린더 추가 */}
-        <Gallery /> {/* 사진 추가 */}
-        <KakaoMap /> {/* 카카오 지도 추가 */}
-        <MobileInvitation /> {/* 마을전하실곳 */}
-        <Guestbook />
-        <BottomImage />
+        <Modal /> {/* 모달 섹션 */}
+        <MusicPlay /> {/* 음악 플레이어 섹션 */}
+        <Header /> {/* 헤더 섹션 */}
+        <MainContent /> {/* 메인 콘텐츠 섹션 */}
+        <Footer /> {/* 푸터 섹션 */}
       </div>
     </div>
   );

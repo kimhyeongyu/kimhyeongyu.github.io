@@ -1,0 +1,84 @@
+/* CoverImage.css */
+
+/* CoverImage 컨테이너 */
+.cover-image-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 이미지 및 비디오를 포함한 wrapper */
+  .cover-image-wrapper {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  }
+  
+  /* 메인 이미지 */
+  .cover-image {
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+    overflow: hidden;
+    left: 50%;
+    padding-top: 14px;
+    object-fit: cover; /* 이미지가 영역에 맞게 커짐 */
+  }
+  
+  /* 비디오 스타일 */
+  .cover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    z-index: 1; /* 이미지 위에 위치 */
+  }
+  
+  /* 텍스트 섹션 */
+  .cover-text-section {
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 2; /* 비디오 위에 텍스트 표시 */
+    text-align: center;
+  }
+  
+  /* 텍스트 제목 */
+  .cover-text-title {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* 날짜 */
+  .cover-text-date {
+    margin: 5px 0;
+    font-size: .85rem;
+    margin-top: 26px;
+  }
+  
+  /* 위치 */
+  .cover-text-location {
+    margin: 0;
+    font-size: .85rem;
+  }
+  
+  /* 구분선 */
+  .separator {
+    margin: 0 42px;
+  }
+  
+  /* 테두리 */
+  .cover-border {
+    position: absolute;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    top: 16px;
+    left: 16px;
+    border: 2px solid #EFEFEF;
+    z-index: 2; /* 비디오 위에 테두리 표시 */
+  }
+  
