@@ -85,7 +85,7 @@ const InvitationText = () => {
                 {/* 신부 */}
                 <div className="contact-item">
                   <div className="cotant-div">
-                    <span className="contact-title">신부 </span>
+                    <span className="contact-title">신부  </span>
                     <span className="contact-name">노승혜</span>
                   </div>
                   <div className="contact-phone-span">
