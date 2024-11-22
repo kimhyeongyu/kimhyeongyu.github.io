@@ -40,7 +40,7 @@ const MobileInvitation = () => {
   };
 
   return (
-    <div style={{ padding: '44px', backgroundColor: 'rgb(252, 250, 248)' }}>
+    <div style={{ padding: '44px', backgroundColor: '#fffdf3' }}>
       <div style={{ marginBottom: '20px' }} data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         
         <div style={{ paddingBottom: '0.7rem' }}>

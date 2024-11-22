@@ -55,7 +55,7 @@ const BottomImage = () => {
     };
 
     return (
-        <div style={{ backgroundColor: 'rgb(252, 250, 248)' }}>
+        <div style={{ backgroundColor: '#fffdf3' }}>
             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                 <div>     
                     <img
@@ -73,7 +73,7 @@ const BottomImage = () => {
                 </div>
 
                 {/* 공유 및 하단 정보 영역 */}
-                <div style={{ padding: '20px', textAlign: 'center', backgroundColor: 'rgb(252, 250, 248)', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', backgroundColor: '#fffdf3', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div style={{ marginBottom: '15px', display: 'block', gap: '10px' }}>
                         <div 
                             onClick={handleKakaoShare} 
