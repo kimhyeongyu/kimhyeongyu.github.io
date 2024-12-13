@@ -15,11 +15,23 @@ function Guestbook() {
     const [selectedEntry, setSelectedEntry] = useState(null);
     const [formData, setFormData] = useState({ name: '', password: '', message: '' });
 
-    const [pageRange, setPageRange] = useState({ start: 1, end: 5 }); // 페이지 범위
+    // 페이지 범위 초기값 설정
+    const [pageRange, setPageRange] = useState({ start: 1, end: 1 });
+
+    // 총 페이지 수 계산
+    const totalPages = Math.ceil(entries.length / itemsPerPage);
 
     useEffect(() => {
         fetchEntries();
     }, []);
+
+    useEffect(() => {
+        // 페이지 범위 업데이트
+        setPageRange({
+            start: 1,
+            end: Math.min(5, totalPages), // 최대 5페이지까지 표시
+        });
+    }, [totalPages]);
 
     const fetchEntries = async () => {
         try {
@@ -126,9 +138,6 @@ function Guestbook() {
     const endIndex = startIndex + itemsPerPage;
     const currentEntries = entries.slice(startIndex, endIndex);
 
-    // 총 페이지 수 계산
-    const totalPages = Math.ceil(entries.length / itemsPerPage);
-
     // 페이지 변경
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -159,8 +168,8 @@ function Guestbook() {
     return (
         <div className="guestbook-container">
             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                <span className="guestbook-container-title">
-                    <span style={{ fontSize: '10px', letterSpacing: '3px' }}>GUEST BOOK</span>
+                <span className="guestbook-container-title" style={{ marginBottom: '44px' }}>
+                    <span style={{ fontSize: '12px', letterSpacing: '3px'}}>GUEST BOOK</span>
                 </span>
                 <div className="guestbook-entries">
                     {currentEntries.map((entry, index) => (
@@ -186,42 +195,38 @@ function Guestbook() {
                     ))}
                 </div>
 
-                {/* 페이징 버튼 */}
-                <div className="pagination">
-                    {/* 이전 버튼 */}
-                    {pageRange.start > 1 && (
-                        <button
-                            onClick={handlePrevRange}
-                            className="pagination-button"
-                        >
-                            &lt;
-                        </button>
-                    )}
-
-                    {/* 페이지 번호 */}
-                    {Array.from(
-                        { length: pageRange.end - pageRange.start + 1 },
-                        (_, i) => pageRange.start + i
-                    ).map((pageNumber) => (
-                        <button
-                            key={pageNumber}
-                            className={`pagination-button ${currentPage === pageNumber ? 'active' : ''}`}
-                            onClick={() => handlePageChange(pageNumber)}
-                        >
-                            {pageNumber}
-                        </button>
-                    ))}
-
-                    {/* 다음 버튼 */}
-                    {pageRange.end < totalPages && (
-                        <button
-                            onClick={handleNextRange}
-                            className="pagination-button"
-                        >
-                            &gt;
-                        </button>
-                    )}
-                </div>
+                {totalPages > 0 && entries.length > 0 && (
+                    <div className="pagination">
+                        {pageRange.start > 1 && (
+                            <button
+                                onClick={handlePrevRange}
+                                className="pagination-button"
+                            >
+                                &lt;
+                            </button>
+                        )}
+                        {pageRange.end >= pageRange.start && Array.from(
+                            { length: pageRange.end - pageRange.start + 1 },
+                            (_, i) => pageRange.start + i
+                        ).map((pageNumber) => (
+                            <button
+                                key={pageNumber}
+                                className={`pagination-button ${currentPage === pageNumber ? 'active' : ''}`}
+                                onClick={() => handlePageChange(pageNumber)}
+                            >
+                                {pageNumber}
+                            </button>
+                        ))}
+                        {pageRange.end < totalPages && (
+                            <button
+                                onClick={handleNextRange}
+                                className="pagination-button"
+                            >
+                                &gt;
+                            </button>
+                        )}
+                    </div>
+                )}
 
                 <div className="button-container">
                     <button onClick={openWriteModal} className="write-button">

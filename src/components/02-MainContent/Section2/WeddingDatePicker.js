@@ -115,16 +115,12 @@ const WeddingDatePicker = () => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '30px' }} data-aos="fade-up" data-aos-once="true" className="aos-init aos-animate">
                 <span style={{ fontSize: '1.5rem', filter: 'blur(4px)', color: '#D2C3B1', display: 'inline-block', minWidth: '1.8rem' }}>12</span>
                 <span style={{ margin: '0 30px', fontSize: '1.7rem', filter: 'blur(2px)', color: '#D2C3B1', display: 'inline-block', minWidth: '2rem' }}>1</span>
-                <span style={{ fontSize: '3.5rem', paddingBottom: '10px' }}>2</span>
+                <span style={{ fontSize: '3.5rem', paddingBottom: '10px', color: '#525252' }}>2</span>
                 <span style={{ margin: '0 30px', fontSize: '1.7rem', filter: 'blur(2px)', color: '#D2C3B1', display: 'inline-block', minWidth: '2rem' }}>3</span>
                 <span style={{ fontSize: '1.5rem', filter: 'blur(4px)', color: '#D2C3B1', display: 'inline-block', minWidth: '1.8rem' }}>4</span>
             </div>
             
             <div className="schedule-calandar-wrapper">
-                <div className="wedding-date red-text" >
-                    <p>2025년 2월 22일 토요일</p>
-                    <p>오후 4시 30분</p>
-                </div>
                 <div className="common-calandar"> {/* 전체 달력에 AOS 적용 */}
                     <div className="common-calandar-table">
                         <div className="common-calandar-header"></div>
@@ -162,7 +158,13 @@ const WeddingDatePicker = () => {
                     </div>
                 </div>
             </div>
+            
             <div className="countdown-timer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" style={{ }} >
+
+                <div className="wedding-date red-text" >
+                    <p>2025년 2월 22일 SAT 오후 4시 30분</p>
+                </div>
+
                 <div className="countdown-display">
                     우리의 예식까지 남은 시간, <span className='time-day'>{timeLeft.days}</span>일
                 </div>

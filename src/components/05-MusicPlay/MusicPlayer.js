@@ -23,6 +23,7 @@ const MusicPlayer = () => {
         url='/05-musicplay/main_music.mp3'
         playing={playing}
         muted={muted}
+        preload="auto" // 미리 로드
         loop={true} // 무제한 반복 재생
         width="0" // 플레이어 숨김
         height="0"

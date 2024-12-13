@@ -24,12 +24,10 @@
 .common-calandar-day {
     text-align: center;
     padding: 10px;
-    font-weight: bold;
-   
 }
 
 .common-calandar-day.sunday {
-    color: rgba(219, 20, 60, 0.5); /* Color for '일' */
+    color: #834141;
 }
 
 .common-calandar-day.monday,
@@ -38,7 +36,7 @@
 .common-calandar-day.thursday,
 .common-calandar-day.friday,
 .common-calandar-day.saturday {
-    color: black; /* Color for '월','화', '수', '목', '금', '토' */
+    color: #525252; /* Color for '월','화', '수', '목', '금', '토' */
 }
 
 .common-calandar-date {
@@ -52,6 +50,8 @@
 
 .common-calandar-date span {
     display: block;
+    color: #5c4120;
+    font-weight: 400;
 }
 
 .common-calandar-date .d-day {
@@ -64,7 +64,7 @@
 }
 
 .circle {
-    background-color: #fff1d6; /* Circle background color for wedding date */
+    background-color: #fff3db; /* Circle background color for wedding date */
     border-radius: 50%; /* Keep the circle shape */
     width: 36px; /* 동그라미 크기 조정 */
     height: 36px; /* 동그라미 크기 조정 */
@@ -84,11 +84,10 @@
 
 .red-text {
     text-align: center; /* Left align the text */
-    margin-left: 16px; /* Add left margin */
     font-family: 'Pretendard'; /* Set font family */
     line-height: 0.8; /* 줄 높이 설정 (원하는 값으로 조정) */
-    margin-bottom: 40px;
-    font-size: 16px;
+    margin-bottom: 4px;
+    font-size: 0.8em;
     margin-top: 30px;
 }
 
@@ -133,11 +132,12 @@
 }
 
 .countdown-display {
-    font-size: 14px;
-    margin: 22px 0 0;
+    font-size: 0.8em;
     text-align: center;
+    color: #333;
 }
 
 .time-day{
+    color: #5c4120;
     font-weight: bold;
 }

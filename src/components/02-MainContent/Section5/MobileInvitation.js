@@ -17,13 +17,13 @@ const MobileInvitation = () => {
   
   const husbandAccounts = [
     { name: '신랑 성기덕', bank: '국민', account: '942902-00-065512'},
-    { name: '신랑측 부', bank: '새마을', account: '3826-10000-700-9'},
-    { name: '신랑측 모', bank: '우리은행', account: '676-110483-02-001'},
+    { name: '신랑측 부 성천모', bank: '새마을', account: '3826-10000-700-9'},
+    { name: '신랑측 모 이미자', bank: '우리은행', account: '676-110483-02-001'},
   ];
 
   const wifeAccounts = [
-    { name: '신부 노승혜', bank: '지역농협', account: '174392-52-051894'},
-    { name: '신부측 부', bank: '농협은행', account: '467-02-452767'},
+    { name: '신부 노승혜', bank: '하나은행', account: '63591064706107'},
+    { name: '신부측 부 노장열', bank: '농협은행', account: '467-02-452767'},
   ];
 
   const copyToClipboard = (account) => {
@@ -43,25 +43,20 @@ const MobileInvitation = () => {
     <div style={{ padding: '44px', backgroundColor: 'rgb(252, 250, 248)' }}>
       <div style={{ marginBottom: '20px' }} data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         
-        <div style={{ paddingBottom: '0.7rem' }}>
+        <div style={{ paddingBottom: '1.7rem' }}>
             <p
-                style={{ fontSize: '14px', letterSpacing: '4px', fontWeight: 'bold', color: '#666' }}
+                style={{ fontSize: '12px',
+                  letterSpacing: '3px',
+                  /* color: rgb(102, 102, 102); */
+                  marginBottom: '10px',
+                  paddingBottom: '37px' }}
                 className="aos-init aos-animate"
             >
                 마음 전하실 곳
             </p>
-            <p style={{ fontSize: '11px', lineHeight: '1.5', margin: '0', letterSpacing: '3.0px', lineHeight: '1.6' }} className="aos-init aos-animate">
-                참석이 어려워 직접 축하를
-            </p>
-            <p style={{ fontSize: '11px', lineHeight: '1.5', margin: '0', letterSpacing: '3.0px', lineHeight: '1.6' }} className="aos-init aos-animate">
-                전하지 못하는 분들을 위해
-            </p>
-            <p style={{ fontSize: '11px', lineHeight: '1.5', margin: '0', letterSpacing: '3.0px', lineHeight: '1.6' }} className="aos-init aos-animate">
-                계좌번호를 기재하였습니다.
-            </p>
-            <p style={{ fontSize: '11px', lineHeight: '1.5', margin: '0', marginBottom: '10px', letterSpacing: '3.0px', lineHeight: '1.6' }} className="aos-init aos-animate">
-                넓은 마음으로 양해 부탁드립니다.
-            </p>
+
+            <p className="invitation-text">직접 축하를 전하지 못하는 분들을 위해</p>
+            <p className="invitation-text">계좌번호를 기재하였습니다. 넓은 마음으로 양해 부탁드립니다.</p>
         </div>
         
         {/* 신랑측 섹션 */}

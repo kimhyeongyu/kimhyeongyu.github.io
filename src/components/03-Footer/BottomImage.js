@@ -66,8 +66,7 @@ const BottomImage = () => {
                         className="object-cover w-full h-full"
                         src="/03-footer/bottom_image.png"
                         style={{
-                            width: '100%',
-                            filter: 'blur(1px)',
+                            width: '100%'
                         }}
                     />
                 </div>
@@ -103,7 +102,7 @@ const BottomImage = () => {
                         </div>
                     </div>
                     <p style={{ fontSize: '14px', color: '#666' }}>
-                        Copyright 2024. <strong>FROM BYRSHA</strong>. All rights reserved.
+                        Copyright 2025. <strong>FROM YUNJU</strong>. All rights reserved.
                     </p>
                 </div>
             </div>

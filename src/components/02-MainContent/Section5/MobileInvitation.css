@@ -111,6 +111,13 @@
     margin-right: 5px; /* 아이콘과 텍스트 간의 간격 */
   }
   
-
+  .invitation-text {
+    text-align: center;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    letter-spacing: -1px;
+    line-height: 1.6;
+    white-space: nowrap;
+}
 
   

@@ -41,7 +41,7 @@
   .cover-text-section {
     background-color: white;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 10px;
     position: relative;
     z-index: 2; /* 비디오 위에 텍스트 표시 */
     text-align: center;
@@ -50,7 +50,9 @@
   /* 텍스트 제목 */
   .cover-text-title {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 35px;
   }
   
   /* 날짜 */
@@ -64,6 +66,8 @@
   .cover-text-location {
     margin: 0;
     font-size: .85rem;
+    margin-bottom: 11px;
+    color: #404040;
   }
   
   /* 구분선 */

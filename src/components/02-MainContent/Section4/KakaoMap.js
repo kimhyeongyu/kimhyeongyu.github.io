@@ -93,14 +93,6 @@ const KakaoMap = () => {
                 >
                     LOCATION
                 </p>
-                <p
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    style={{ fontSize: '12px', lineHeight: '0.3rem' }}
-                    className="aos-init aos-animate"
-                >
-                    오시는길
-                </p>
             </div>
             <div style={{ paddingBottom: '0.7rem', textAlign: 'center' }}>
                 <p className="location-subtitle-1">MARRYVILIA THE PRESTIGE</p>
@@ -116,7 +108,8 @@ const KakaoMap = () => {
                             marginLeft: '10px',
                             width: '14px',
                             height: '14px',
-                            verticalAlign: 'middle'
+                            verticalAlign: 'middle',
+                            opacity: 0.7
                         }}
                         title="복사하기"
                     />

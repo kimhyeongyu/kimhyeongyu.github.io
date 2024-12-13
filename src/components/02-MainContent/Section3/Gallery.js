@@ -243,7 +243,7 @@ const Gallery = () => {
         <>
             <div className="gallery-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                 <div style={{ paddingBottom: '0.7rem' }}>
-                    <p data-aos="fade-up" style={{ fontSize: '10px', letterSpacing: '3px' }}>GALLERY</p>
+                    <p data-aos="fade-up" style={{ fontSize: '12px', letterSpacing: '3px' }}>GALLERY</p>
                 </div>
 
                 <div className="gallery-grid" style={{ overflow: 'hidden', transition: 'max-height 1s' }}>
@@ -289,7 +289,7 @@ const Gallery = () => {
                         className="prev-button"
                         onClick={goToPrevSlide}
                         style={{
-                            position: 'absolute', left: '30px', top: '50%', transform: 'translateY(-50%)',
+                            position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)',
                             background: 'none', border: 'none', color: 'white', fontSize: '24px',
                             cursor: 'pointer', zIndex: 10002,
                             width: '40px', height: '40px', 
@@ -300,7 +300,7 @@ const Gallery = () => {
                         className="next-button"
                         onClick={goToNextSlide}
                         style={{
-                            position: 'absolute', right: '30px', top: '50%', transform: 'translateY(-50%)',
+                            position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)',
                             background: 'none', border: 'none', color: 'white', fontSize: '24px',
                             cursor: 'pointer', zIndex: 10002,
                             width: '40px', height: '40px', 

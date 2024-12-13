@@ -21,8 +21,9 @@ html, body{
 
 .App {
   text-align: center;
-  box-shadow: 0px 0px 18px rgb(0 0 0 / 10%);
- /*  background-color: rgb(243, 239, 236); */
+ box-shadow: 0px 0px 3px rgb(0 0 0 / 10%);
+ /* background-color: rgb(243, 239, 236); */
+ border: 1px solid #e7e7e7;
 }
 
 /* PC 모드에서만 max-width를 400px로 제한 */
@@ -107,3 +108,46 @@ div {
     transform: rotate(360deg);
   }
 }
+
+
+/* SVG 인트로를 화면에 고정 */
+.svg-intro-wrapper {
+  position: fixed; /* 화면 고정 */
+  z-index: 10;
+  max-width: 480px;
+  width: 100vh;
+  /*top: 0;
+  left: 0;
+  
+  height: 100%;
+  
+  background: white;  */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 초기 숨김 상태 */
+.hidden {
+  opacity: 0;
+  visibility: hidden; /* 보이지 않게 설정 */
+  transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s;
+}
+
+/* 페이드인 효과 */
+.fade-in {
+  opacity: 1;
+  visibility: visible; /* 보이게 설정 */
+  /* transition: opacity 2.0s 0.2s ease-in-out; */
+  transition-property: opacity;        
+  transition-duration: 3.5s;      
+  transition-delay: 0.3s;    
+  transition-timing-function: ease-in-out;
+
+}
+
+.fade-out {
+  opacity: 0;
+  transition-duration: 1.0s;      
+  transition-timing-function: ease-in-out;
+}
+

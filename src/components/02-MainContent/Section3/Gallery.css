@@ -10,8 +10,8 @@
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Set to 2 columns */
-    gap: 10px; /* Space between images */
-    padding: 10px; /* Internal padding */
+    gap: 6px; /* Space between images */
+    padding: 17px; /* Internal padding */
 }
 
 
@@ -22,7 +22,7 @@
     padding-top: 100%; /* 1:1 비율을 유지 */
     overflow: hidden; /* 셀을 벗어나는 부분 숨기기 */
     background-color: #f0f0f0;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 /* Images inside the grid */
@@ -38,8 +38,9 @@
 
 /* 각 이미지를 개별적으로 조정 (nth-child 사용) */
 .gallery-grid div:nth-child(1) img {
-    top: 46%; /* 1번 이미지 세로 중앙 */
+    top: 46%;
     left: 50%;
+    width: 96%;
 }
 
 .gallery-grid div:nth-child(2) img {
@@ -48,7 +49,8 @@
 }
 
 .gallery-grid div:nth-child(3) img {
-    top: 26%;
+    width: 102%;
+    top: 23%;
     left: 38%;
 }
 
@@ -75,8 +77,9 @@
 }
 
 .gallery-grid div:nth-child(8) img {
-    top: 54%;
-    left: 65%;
+    width: 104%;
+    top: 50%;
+    left: 65%;  
 }
 
 .gallery-grid div:nth-child(9) img {
@@ -101,12 +104,14 @@
 
 .gallery-grid div:nth-child(13) img {
     top: 64%;
-    left: 79%;
+    left: 82%;
+    width: 112%;
 }
 
 .gallery-grid div:nth-child(14) img {
-    top: 56%;
-    left: 32%;
+    top: 43%;
+    left: 27%;
+    width: 121%;
 }
 
 .gallery-grid div:nth-child(15) img {
