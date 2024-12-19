@@ -26,7 +26,7 @@ const BottomImage = () => {
             window.Kakao.Link.sendDefault({
                 objectType: 'feed',
                 content: {
-                    title: '기덕❤️승혜 결혼합니다',
+                    title: '기덕,승혜 결혼합니다',
                     description: '2025년 2월 22(토) 오후 4시 30분',
                     imageUrl: 'https://kimhyeongyu.github.io/03-footer/kakao_image.jpeg', // 이미지 URL 입력
                     link: {

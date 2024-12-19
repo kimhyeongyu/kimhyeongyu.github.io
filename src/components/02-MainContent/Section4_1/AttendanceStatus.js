@@ -60,38 +60,29 @@ const AttendanceStatus = () => {
   return (
     <div>
       <div style={{paddingBottom: "24px", paddingTop: "10px", backgroundColor: "rgb(252, 250, 248)" }}>
-          <p
-              style={{ fontSize: '14px',
-                letterSpacing: '3px',
-                /* color: rgb(102, 102, 102); */
-                marginBottom: '10px',
-                paddingBottom: '20px' }}
-              className="aos-init aos-animate"
-          >
-              참석여부 전달하기
-          </p>
-          
-          <p className="invitation-text">참석여부를 보내주시면 도움이 됩니다.</p>
-          <br></br>
-
-
-        {/* 모달 열기 버튼 */}
-        <div style={{ textAlign: "center", color : "rgb(252, 250, 248)"  }}>
-          <button
-            onClick={openModal}
-            style={{
-              padding: "10px 20px",
-              fontSize: "16px",
-              cursor: "pointer",
-              backgroundColor: "#a19892",
-              color: "#fff",
-              border: "none",
-              width: "82%"
-            }}
-          >
-          전달하기
-          </button>
-        </div>
+      <div
+        style={{
+          position: "fixed",
+          right: "20px",
+          bottom: "29%",
+          width: "60px",
+          height: "auto",
+          zIndex: "999",
+          cursor: "pointer",
+          animation: "3s ease-in-out 0s infinite normal none running AttendanceStatus_floating__7QA9u",
+        }}
+        onClick={openModal}
+        className={styles["AttendanceStatus-floating"]}
+      >
+        <img
+          src="/02-maincontent/section4/image_01.png" // 이미지 URL
+          alt="참석 여부 전달하기"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+        />
+      </div>
 
       </div>
       {/* 첫 번째 모달 */}
@@ -113,14 +104,14 @@ const AttendanceStatus = () => {
             <h2 className={styles["AttendanceStatus-content_h2"]}>
               참석 여부 전달하기
             </h2>
-            <p>
+            <p style={{ paddingBottom: '14px'}}>
               참석여부를 미리 전달주시면<br></br>
               예식 준비에 큰 도움이 됩니다 :)
             </p>
             <hr />
             <div className={styles["AttendanceStatus-event-details"]}>
               <p className={styles["AttendanceStatus-event-details_font"]}>
-                📅 2025.02.22 SAT
+                📅 2025.02.22 SAT 16:30PM
               </p>
               <p className={styles["AttendanceStatus-event-details_font"]}>
                 📍 수원 메리빌리아 컨벤션 홀
