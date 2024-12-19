@@ -82,7 +82,7 @@ const KakaoMap = () => {
     }, []);
 
     return (
-        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" style={{ padding: '30px', marginTop:"30px", backgroundColor:"#fcfaf8" }}>
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" style={{ padding: '30px', marginTop:"30px", backgroundColor:"#fffdf3" }}>
 
             <div style={{ paddingBottom: '0.7rem' }}>
                 <p

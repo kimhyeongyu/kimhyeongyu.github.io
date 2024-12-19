@@ -21,9 +21,8 @@ html, body{
 
 .App {
   text-align: center;
- box-shadow: 0px 0px 3px rgb(0 0 0 / 10%);
- /* background-color: rgb(243, 239, 236); */
- /* border: 1px solid #e7e7e7; */
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 10%);
+ /*  background-color: rgb(243, 239, 236); */
 }
 
 /* PC 모드에서만 max-width를 400px로 제한 */
